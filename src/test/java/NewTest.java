@@ -14,6 +14,7 @@ public class NewTest {
 		System.setProperty("webdriver.chrome.driver", "C:\\JyotsnaPatil\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://Google.com");
+		System.out.println("***********title***********"+driver.getTitle());
 	
 	}
   }
