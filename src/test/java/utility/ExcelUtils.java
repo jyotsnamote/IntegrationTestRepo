@@ -3,6 +3,7 @@ package utility;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
+import org.apache.poi.openxml4j.util.ZipSecureFile;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -21,7 +22,9 @@ public class ExcelUtils {
 	// Pass Excel Path and SheetName as Arguments to this method
 	public static void setExcelFile(String Path) throws Exception {
 		FileInputStream ExcelFile = new FileInputStream(Path);
+		ZipSecureFile.setMinInflateRatio(-1.0d);
 		ExcelWBook = new XSSFWorkbook(ExcelFile);
+	
 	}
 
 	// This method is to read the test data from the Excel cell
