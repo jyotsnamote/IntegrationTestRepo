@@ -10,7 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import config.Constants;
-import executionEngine.DriverScriptTest;
+import executionEngine.DriverscriptTest;
 
 public class ExcelUtils {
 	private static XSSFSheet ExcelWSheet;
@@ -99,7 +99,7 @@ public class ExcelUtils {
         	fileOut.close();
         	ExcelWBook = new XSSFWorkbook(new FileInputStream(Constants.Path_TestData));
         	}catch(Exception e){
-        	DriverScriptTest.bResult = false;
+        	DriverscriptTest.bResult = false;
         	}
  
     	}
