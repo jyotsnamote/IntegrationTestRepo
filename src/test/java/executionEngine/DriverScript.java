@@ -1,5 +1,6 @@
 package executionEngine;
 
+import org.testng.annotations.Test;
 import java.io.FileInputStream;
 import java.lang.reflect.Method;
 import java.util.Properties;
@@ -30,7 +31,9 @@ public class DriverScript {
 		method = actionKeywords.getClass().getMethods();
 	}
 @Test
-	public static void main(String[] args) throws Exception {
+	//public static void main(String[] args) throws Exception
+
+public static void Test() throws Exception{
 		ExcelUtils.setExcelFile(Constants.Path_TestData);
 		DOMConfigurator.configure("log4j.xml");
 		String Path_OR = Constants.Path_OR;
