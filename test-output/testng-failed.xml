@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NewTest">
+      <class name="executionEngine.DriverScript">
         <methods>
-          <include name="f"/>
+          <include name="Test"/>
         </methods>
-      </class> <!-- NewTest -->
+      </class> <!-- executionEngine.DriverScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
