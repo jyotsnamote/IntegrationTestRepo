@@ -37,8 +37,8 @@ public class DriverscriptTest {
 
 
 		ExcelUtils.setExcelFile(Constants.Path_TestData);
-		DOMConfigurator.configure("C:\\Program Files (x86)\\Jenkins\\workspace\\JenkinsGitIntegrationJob\\src\\test\\java\\log4j2.xml");
-	
+		//DOMConfigurator.configure("C:\\Program Files (x86)\\Jenkins\\workspace\\JenkinsGitIntegrationJob\\src\\test\\java\\log4j2.xml");
+		DOMConfigurator.configure("//JenkinGitIntegration//src//test//java//log4j2.xml");
 		String Path_OR = Constants.Path_OR;
 		FileInputStream fs = new FileInputStream(Path_OR);
 		OR = new Properties(System.getProperties());
