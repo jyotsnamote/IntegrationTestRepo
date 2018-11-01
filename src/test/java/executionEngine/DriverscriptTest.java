@@ -37,7 +37,9 @@ public class DriverscriptTest {
 
 
 		ExcelUtils.setExcelFile(Constants.Path_TestData);
-		DOMConfigurator.configure("log4j.xml");
+		//DOMConfigurator.configure("log4j.xml");
+		DOMConfigurator.configure("C:\\JyotsnaPatil\\Projects\\KeywordDrivenApproachSelenium\\Keyword\\src\\main\\java\\log4j2.xml");
+		
 		String Path_OR = Constants.Path_OR;
 		FileInputStream fs = new FileInputStream(Path_OR);
 		OR = new Properties(System.getProperties());
